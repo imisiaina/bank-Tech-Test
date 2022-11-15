@@ -1,0 +1,26 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imisiaina/bank-Tech-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imisiaina/bank-Tech-Test/issues"
+  },
+  "homepage": "https://github.com/imisiaina/bank-Tech-Test#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
