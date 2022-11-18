@@ -5,12 +5,17 @@ describe("Statement", () => {
   beforeEach(() => {
     bank = new Account();
     statement = new Statement();
+
+    jest
+    .useFakeTimers()
+    .setSystemTime(new Date('2025-03-10'));
+
   });
 
   it("gets the statement", () => {
     bank.deposit(5000);
     expect(statement.getStatement()).toEqual(
-      "date || credit || debit || balance\n18/11/2022 || £5000 || £5000"
+      "date || credit || debit || balance\n10/03/2025 || £5000 || £5000"
     );
   });
 
@@ -18,6 +23,7 @@ describe("Statement", () => {
     bank.deposit(5000);
     bank.deposit(5000);
     bank.withdraw(2000);
-    expect(statement.getStatement()).toContain("18/11/2022 || £5000 || £5000");
+    console.log(statement.getStatement())
+    expect(statement.getStatement()).toContain("10/03/2025 || £5000 || £5000");
   });
 });

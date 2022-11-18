@@ -6,17 +6,17 @@ class Statement {
   }
 
   format() {
-    const arr = bank.getTransaction();
-    let formattedArr = arr.map((t) => {
-      if (t["amount"] > 0) {
-        return `${t["transDate"]} || £${t["amount"]} || £${t["balanceLeft"]}`;
+    const array = bank.getTransaction();
+    let formattedArray = array.map((transaction) => {
+      if (transaction["amount"] > 0) {
+        return `${transaction["transDate"]} || £${transaction["amount"]} || £${transaction["balanceLeft"]}`;
       } else {
-        return `${t["transDate"]} || £${t["amount"] * -1} || £${
-          t["balanceLeft"]
+        return `${transaction["transDate"]} || £${transaction["amount"] * -1} || £${
+          transaction["balanceLeft"]
         }`;
       }
     });
-    return formattedArr.reverse().join("\n");
+    return formattedArray.reverse().join("\n");
   }
 
   getStatement() {
