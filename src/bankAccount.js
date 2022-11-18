@@ -51,6 +51,6 @@ class Account {
   getTransaction() {
     return this.transaction;
   }
-};
+}
 
 module.exports = Account;
