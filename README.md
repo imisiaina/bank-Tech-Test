@@ -39,5 +39,20 @@ npm install -g jest
 jest
 ```
 
+### Test Coverage 
+Coverage at 100%
+
+```
+jest --coverage
+```
+
+### How app should look
+![alt text](./images/Screenshot%202022-11-18%20at%2011.42.22.png)
+
+### My Approach
+
+![alt text](./images/Screenshot%202022-11-18%20at%2011.27.23.png)
+
+
 
 
